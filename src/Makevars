@@ -1,0 +1,13 @@
+PKG_FCFLAGS = $(SHLIB_OPENMP_CFLAGS)
+PKG_CFLAGS = $(SHLIB_OPENMP_CFLAGS)
+PKG_LIBS = $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS) $(SHLIB_OPENMP_CFLAGS)
+
+C_OBJS = LLCc.o
+FT_OBJS = LLCf.o
+
+all: $(SHLIB) clean
+
+$(SHLIB): $(FT_OBJS) $(C_OBJS)
+
+clean:
+	@rm -rf *.mod *.o

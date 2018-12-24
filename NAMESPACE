@@ -1,0 +1,2 @@
+useDynLib(RFortLangComp, .registration=TRUE)
+exportPattern("^[[:alpha:]]+")

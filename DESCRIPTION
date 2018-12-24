@@ -1,0 +1,9 @@
+Package: RFortLangComp
+Type: Package
+Title: R, Fortran, and C versions of layer loss functions for speed comparison
+Version: 0.0.1
+Date: 2018-12-23
+Authors@R: c(person(given="Avraham", family="Adler", role=c("aut", "cph", "cre"), email="Avraham.Adler@gmail.com", comment = c(ORCID = "0000-0002-3039-0703")))
+Description: This package contains various flavors of R, Fortran, and C versions of a simple layer loss cost function. These flavors represent levels of OpenMP parallelism. These functions' performance will be compared with Rcpp versions of the same function in the CppLangComp package.
+License: BSD_2_clause + file LICENSE
+NeedsCompilation: yes
